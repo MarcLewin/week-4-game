@@ -87,6 +87,7 @@
             <div class="col-md-6">
                 <div class="page-header">
                     <h1>User total Score:</h1>
+                    <div id= "counter"> </div>
                 </div>
             </div>
         </div>
@@ -119,7 +120,7 @@
                 diamonds4: $("<img>"),
             }
             var counter = 0;
-            //var diamondNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+            
 
             // ... generate a random number between 19 and 120
             var random = Math.floor(Math.random() * 101) + 19;
@@ -136,7 +137,7 @@
             diamondObjects.diamonds.addClass("diamond-image");
 
             // Each imageCrystal will be given a src link to the crystal image
-            diamondObjects.diamonds.attr("src", "https://github.com/MarcLewin/week-4-game/blob/master/asets/images/blueDiamond.png?raw=true");
+            diamondObjects.diamonds.attr("src", "https://github.com/MarcLewin/week-4-game/blob/master/assets/images/blueDiamond.png?raw=true");
             // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
             $("#crystal1").append(diamondObjects.diamonds);
 
@@ -148,7 +149,7 @@
             diamondObjects.diamonds2.addClass("diamond-image");
 
             // Each imageCrystal will be given a src link to the crystal image
-            diamondObjects.diamonds2.attr("src", "https://github.com/MarcLewin/week-4-game/blob/master/asets/images/greenDiamond.gif?raw=true");
+            diamondObjects.diamonds2.attr("src", "https://github.com/MarcLewin/week-4-game/blob/master/assets/images/greenDiamond.gif?raw=true");
             // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
             $("#crystal2").append(diamondObjects.diamonds2);
 
@@ -157,7 +158,7 @@
             diamondObjects.diamonds3.addClass("diamond-image");
 
             // Each imageCrystal will be given a src link to the crystal image
-            diamondObjects.diamonds3.attr("src", "https://github.com/MarcLewin/week-4-game/blob/master/asets/images/orangeDiamond.png?raw=true");
+            diamondObjects.diamonds3.attr("src", "https://github.com/MarcLewin/week-4-game/blob/master/assets/images/orangeDiamond.png?raw=true");
             // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
             $("#crystal3").append(diamondObjects.diamonds3);
 
@@ -167,43 +168,56 @@
             diamondObjects.diamonds4.addClass("diamond-image");
 
             // Each imageCrystal will be given a src link to the crystal image
-            diamondObjects.diamonds4.attr("src", "https://github.com/MarcLewin/week-4-game/blob/master/asets/images/redDiamond.png?raw=true");
+            diamondObjects.diamonds4.attr("src", "https://github.com/MarcLewin/week-4-game/blob/master/assets/images/redDiamond.png?raw=true");
             // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
             $("#crystal4").append(diamondObjects.diamonds4);
 
 
-            console.log(diamondObjects.diamonds4);
-
-            // $(".diamond-image").on("click",function() {
-            //     alert("wheeee")
-            // })
+           
             var assignValue = Math.floor(Math.random() * 11) + 1;
             diamondObjects.diamonds.attr("data-diamond-value", assignValue);
             var diamondVal = parseInt(diamondObjects.diamonds.attr("data-diamond-value"));
                     console.log(diamondVal);
-            $(".diamond-image").on("click", function () {
-                //for (var i = 0; i < diamondNumber.length; i++) {
 
+             var assignValue2 = Math.floor(Math.random() * 11) + 1;
+            diamondObjects.diamonds2.attr("data-diamond2-value", assignValue2);
+            var diamondVal2 = parseInt(diamondObjects.diamonds2.attr("data-diamond2-value"));
+                    console.log(diamondVal2);
 
-                          
-                    //     //  assignValue = this
-                    //   console.log(assignValue)
+              var assignValue3 = Math.floor(Math.random() * 11) + 1;
+            diamondObjects.diamonds3.attr("data-diamond3-value", assignValue3);
+            var diamondVal3 = parseInt(diamondObjects.diamonds3.attr("data-diamond3-value"));
+                    console.log(diamondVal3);
 
-                //TRYING TO CONVERT DIAMONDOBJECT.DIAMONDS TO A NUMBER
-                   
-                   //diamondObjects.diamonds += diamondNumber[i];
-                    // diamondObjects.diamonds = parseInt(diamonds);
-                    // number(diamondObjects.diamonds);
-                   
-            //         console.log(diamondNumber[i]); //this is always the number 1??????
-            //         console.log(typeof(diamondNumber[i]));
-            //         console.log(typeof (diamondObjects.diamonds));
-            //         return
-            //    // }
+                    var assignValue4 = Math.floor(Math.random() * 11) + 1;
+            diamondObjects.diamonds4.attr("data-diamond4-value", assignValue4);
+            var diamondVal4 = parseInt(diamondObjects.diamonds4.attr("data-diamond4-value"));
+                    console.log(diamondVal4);
+           
+           
+            $("#crystal1").on("click", function () {
+                counter += diamondVal;
+                console.log(counter);
 
             })
 
+         $("#crystal2").on("click", function () {
+                counter += diamondVal2;
+                console.log(counter);
 
+            })
+
+            $("#crystal3").on("click", function () {
+                counter += diamondVal3;
+                console.log(counter);
+
+            })
+
+            $("#crystal4").on("click", function () {
+                counter += diamondVal4;
+                console.log(counter);
+
+            })
 
 
 
@@ -212,7 +226,24 @@
         });
     </script>
 
+<!-- //for (var i = 0; i < diamondNumber.length; i++) { -->
 
+
+                          
+    <!-- //     //  assignValue = this
+    //   console.log(assignValue)
+
+//TRYING TO CONVERT DIAMONDOBJECT.DIAMONDS TO A NUMBER
+   
+   //diamondObjects.diamonds += diamondNumber[i];
+    // diamondObjects.diamonds = parseInt(diamonds);
+    // number(diamondObjects.diamonds);
+   
+//         console.log(diamondNumber[i]); //this is always the number 1??????
+//         console.log(typeof(diamondNumber[i]));
+//         console.log(typeof (diamondObjects.diamonds));
+//         return
+//    // } -->
 
 
     <!-- Bootstrap JavaScript CDN -->
