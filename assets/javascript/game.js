@@ -1,5 +1,5 @@
-<!-- JqueRRYyYyyyyYyyyyYyyyYyyyyYyyyyYYYyyyyYYYyyyYYY -->
-    <script type="text/javascript">
+
+
 
         $(document).ready(function () {
 
@@ -33,7 +33,7 @@
             diamondObjects.diamonds.addClass("diamond-image");
 
             // Each imageCrystal will be given a src link to the crystal image
-            diamondObjects.diamonds.attr("src", "https://github.com/MarcLewin/week-4-game/blob/master/assets/images/blueDiamond.png?raw=true");
+            diamondObjects.diamonds.attr("src",  "https://github.com/MarcLewin/week-4-game/blob/master/assets/images/blueDiamond.png?raw=true");
             // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
             $("#crystal1").append(diamondObjects.diamonds);
 
@@ -142,4 +142,4 @@
 
 
         });
-    </script>
+  
