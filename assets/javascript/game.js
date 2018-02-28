@@ -29,44 +29,33 @@
                 $(this).addClass("diamond-image");
             });
 
-            // First each crystal will be given the class ".crystal-image".
-            // This will allow the CSS to take effect.
+           
             diamondObjects.diamonds.addClass("diamond-image");
 
-            // Each imageCrystal will be given a src link to the crystal image
+            
             diamondObjects.diamonds.attr("src",  "https://github.com/MarcLewin/week-4-game/blob/master/assets/images/blueDiamond.png?raw=true");
-            // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
+            
             $("#crystal1").append(diamondObjects.diamonds);
 
-
-
-
-            // First each crystal will be given the class ".crystal-image".
-            // This will allow the CSS to take effect.
             diamondObjects.diamonds2.addClass("diamond-image");
 
-            // Each imageCrystal will be given a src link to the crystal image
+            
             diamondObjects.diamonds2.attr("src", "https://github.com/MarcLewin/week-4-game/blob/master/assets/images/greenDiamond.gif?raw=true");
-            // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
             $("#crystal2").append(diamondObjects.diamonds2);
 
-            // First each crystal will be given the class ".crystal-image".
-            // This will allow the CSS to take effect.
+            
             diamondObjects.diamonds3.addClass("diamond-image");
 
-            // Each imageCrystal will be given a src link to the crystal image
+           
             diamondObjects.diamonds3.attr("src", "https://github.com/MarcLewin/week-4-game/blob/master/assets/images/orangeDiamond.png?raw=true");
-            // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
+      
             $("#crystal3").append(diamondObjects.diamonds3);
-
-
-            // First each crystal will be given the class ".crystal-image".
-            // This will allow the CSS to take effect.
+    
             diamondObjects.diamonds4.addClass("diamond-image");
 
-            // Each imageCrystal will be given a src link to the crystal image
+           
             diamondObjects.diamonds4.attr("src", "https://github.com/MarcLewin/week-4-game/blob/master/assets/images/redDiamond.png?raw=true");
-            // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
+          
             $("#crystal4").append(diamondObjects.diamonds4);
 
 
@@ -74,7 +63,7 @@
             var assignValue = Math.floor(Math.random() * 11) + 1;
             diamondObjects.diamonds.attr("data-diamond-value", assignValue);
             var diamondVal = parseInt(diamondObjects.diamonds.attr("data-diamond-value"));
-            console.log(diamondVal);
+           console.log(diamondVal);
 
             var assignValue2 = Math.floor(Math.random() * 11) + 1;
             diamondObjects.diamonds2.attr("data-diamond2-value", assignValue2);
