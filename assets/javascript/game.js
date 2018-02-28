@@ -120,7 +120,7 @@
 
             })
 
-            if (counter == random) {
+            if (counter === random) {
                 wins++;
                 console.log(wins);
                 $("#wins").text("Wins: " + wins )
