@@ -16,6 +16,7 @@
             var counter = 0;
             var wins = 0;
             var losses = 0;
+            var random = 0;
 
 
             // ... generate a random number between 19 and 120
